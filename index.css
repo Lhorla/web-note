@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+header h1 {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+header form {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+
+form .title {
+    border: 5px solid aquamarine;
+    outline: none;
+    width: 550px;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: rgb(236, 234, 234);
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    resize: none;
+}
+
+form .text {
+    border: 5px solid aquamarine;
+    outline: none;
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+    background: rgb(236, 234, 234);
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    resize: none;
+}
+
+::placeholder {
+    font-weight: bold;
+    opacity: .5;
+    color: black;
+    font-size: 1rem;
+}
+
+.msg {
+    text-align: start;
+    margin: 10px 60px;
+    color: red;
+    font-size: 1rem;
+}
+
+button {
+    width: 550px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color:aquamarine;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+section .notes-head {
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.notes {
+    margin-top: 5px;;
+}
+
+.note {
+    margin: 10px;
+    background-color: lightgrey;
+    width: 550px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px solid aquamarine;
+    border: none;
+}
+
+.note-title {
+    margin: 5px;
+    font-weight: bold;
+}
+
+.note-text {
+    margin: 5px;
+    font-style: italic;
+}
+
+i {
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+}
+
+/*
+.text
+
+
+
+.notes {
+    background-color: red;
+}
+
+.right h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+}
+
+.notes div {
+    margin: 10px;
+}
+
+div p {
+    font-size: 1.5rem;
+}
+
+
+*/
