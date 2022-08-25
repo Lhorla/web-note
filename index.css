@@ -123,34 +123,38 @@ i {
     margin: 10px 10px 0 0;
 }
 
-/*
-.text
+@media screen and (max-width: 760px) {
+    .container {
+      max-width: 760px;
+    }
 
+    header {
+        font-size: 1rem;
+    }
 
+    header form {
+        width: 350px;
+    }
 
-.notes {
-    background-color: red;
+    form .title {
+        width: 350px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    form .text {
+        width: 350px;
+        height: 200px;
+        font-size: 1rem;
+    }
+
+    ::placeholder {
+        font-size: 0.5rem;
+    }
+
+    button {
+        width: 350px;
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
 }
-
-.right h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    text-decoration: underline;
-}
-
-.notes {
-    display: flex;
-    flex-direction: column;
-}
-
-.notes div {
-    margin: 10px;
-}
-
-div p {
-    font-size: 1.5rem;
-}
-
-
-*/
