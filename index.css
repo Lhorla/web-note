@@ -5,17 +5,18 @@
 }
 
 body {
-    background-color: cornsilk;
+    background-image: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 header {
@@ -26,6 +27,11 @@ header {
 header h1 {
     text-transform: uppercase;
     margin: 10px 0;
+    font-weight: 700;
+}
+
+header p {
+    font-weight: 600;
 }
 
 header form {
@@ -35,7 +41,6 @@ header form {
 }
 
 form .title {
-    border: 5px solid aquamarine;
     outline: none;
     width: 550px;
     height: 50px;
@@ -45,11 +50,15 @@ form .title {
     padding: 12px 20px;
     font-size: 1.5rem;
     resize: none;
+    font-weight: 400;
+}
+
+form .title:focus {
+    outline: none;
+    border: 2px solid aquamarine;
 }
 
 form .text {
-    border: 5px solid aquamarine;
-    outline: none;
     width: 550px;
     height: 350px;
     border-radius: 10px;
@@ -57,20 +66,25 @@ form .text {
     padding: 12px 20px;
     font-size: 1.5rem;
     resize: none;
+    font-weight: 400;
 }
 
-::placeholder {
-    font-weight: bold;
+form .text:focus  {
+    outline: none;
+    border: 2px solid aquamarine;
+}
+
+.title::placeholder, .text::placeholder {
     opacity: .5;
     color: black;
     font-size: 1rem;
 }
 
 .msg {
-    text-align: start;
     margin: 10px 60px;
     color: red;
     font-size: 1rem;
+    font-weight: 200;
 }
 
 button {
@@ -88,39 +102,65 @@ button:hover {
     background-color: aqua;
 }
 
-section .notes-head {
+.notes-head {
     text-transform: uppercase;
     margin: 10px 0;
     text-align: center;
+    font-weight: 600;
+}
+
+hr {
+    height: 2px;
+    margin-bottom: 1rem;
 }
 
 .notes {
-    margin-top: 5px;;
+    margin-top: 5px;
 }
 
 .note {
     margin: 10px;
-    background-color: lightgrey;
+    background-color: rgb(236, 234, 234);
     width: 550px;
-    text-align: center;
     padding: 20px;
-    border-radius: 10px solid aquamarine;
     border: none;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    font-weight: 400;
 }
 
 .note-title {
     margin: 5px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .note-text {
     margin: 5px;
-    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 i {
     cursor: pointer;
     margin: 10px 10px 0 0;
+    width: 30px;
+}
+
+footer {
+    font-size: 1.5rem;
+    color: aquamarine;
+}
+
+footer a {
+    text-decoration: none;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: white;
 }
 
 @media screen and (max-width: 760px) {
