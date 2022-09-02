@@ -191,6 +191,10 @@ footer a:hover {
         font-size: 0.5rem;
     }
 
+    .msg {
+        font-size: 0.6rem;
+    }
+
     button {
         width: 350px;
         padding: 5px 15px;
